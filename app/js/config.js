@@ -1,5 +1,6 @@
 angular.module('polsie-alpha-grid', [
-  'ui.router'
+  'ui.router',
+  'ngAnimate'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('home');
