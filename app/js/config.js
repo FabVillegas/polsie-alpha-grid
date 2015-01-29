@@ -2,8 +2,13 @@ angular.module('polsie-alpha-grid', [
   'ui.router'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise('first');
+	$urlRouterProvider.otherwise('home');
 	$stateProvider.
+  state('home', {
+		url: '/home',
+		templateUrl: 'views/home-view.html',
+		controller: 'homeCtrl'
+	}).
 	state('first', {
 		url: '/first',
 		templateUrl: 'views/firstTemplate.html',
